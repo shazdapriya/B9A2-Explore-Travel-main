@@ -15,9 +15,24 @@
 .hide{
   display: none;
 }
+
 p{
-  color: var(--commoncolor);
+  color: var(--littletext);
   font-size: 16px;
+  text-align: justify;
+}
+
+.section_heading{
+  color: var(--littletext);
+  font-size: 40px;
+}
+
+.common_button{
+  color: var(--commoncolor);
+  background-color: var(--primarycolor);
+  font-size: 18px;
+  padding: 12px 15px;
+  border-radius: 10px;
 }
 
 body{
@@ -107,7 +122,7 @@ body{
 input, .select_btn{
   width: 24%;
   font-size: 16px;
-  padding: 10px 5px;
+  padding: 10px 2px;
   border-radius: 6px;
   color: var(--littletext);
   cursor: pointer;
@@ -117,6 +132,26 @@ input, .select_btn{
 
 .search_icon {
   margin: 0 10px ;
+}
+
+/*  populer part */
+.populer_part{
+  padding: 60px 0;
+}
+
+.populer_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.populer_text {
+  margin-right: 100px;
+}
+
+.populer_text ul li{
+  position: relative;
+  left: 20px;
+  color: var(--littletext);
 }
 
 /* responsive web */
@@ -156,5 +191,19 @@ input, .select_btn{
     display: block;
     width: 80%;
     margin: 20px auto;
+  }
+
+  /* populer part */
+  .populer_content {
+    flex-direction: column;
+  }
+
+  .populer_text {
+    margin:0 50px;
+  }
+
+  .populer_img {
+    margin-top: 50px;
+    text-align: center;
   }
 }
