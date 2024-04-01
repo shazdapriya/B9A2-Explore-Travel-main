@@ -155,6 +155,47 @@ header, main{
   left: 20px;
   color: var(--littletext);
 }
+/* Our Values for customize part */
+
+.Our_value_part {
+  margin-bottom: 70px;
+}
+
+.container_value_part {
+  display: flex;
+  text-align: center;
+}
+
+.content_value_part {
+  margin: 40px 15px;
+}
+
+.content_value_part .value_icon {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  line-height: 100px;
+  justify-content: center;
+  box-shadow: 5px 10px 10px #d2d2d3;
+}
+
+.content_value_part .value_icon:hover {
+  background-color: var(--primarycolor);
+  color: var(--commoncolor);
+  transition: 2s;
+}
+
+.content_value_part h4 {
+  color: var(--secondarycolor);
+  font-weight: 800;
+  margin: 25px 0;
+  font-size: 24px;
+}
+
+.content_value_part .value_icon i {
+  font-size: 30px;
+}
 
 /* destination_part */
 
@@ -208,6 +249,7 @@ header, main{
   color: var(--secondarycolor);
   font-weight: 800;
   margin: 15px 0;
+  font-size: 20px;
 }
 
 /* place part */
@@ -389,6 +431,15 @@ header, main{
   .populer_img {
     margin-top: 50px;
     text-align: center;
+  }
+
+  /* Our Values for customize part */
+  .container_value_part {
+   flex-direction: column;
+  }
+
+  .content_value_part {
+    margin: 40px 50px;
   }
 
   /* destination part */
